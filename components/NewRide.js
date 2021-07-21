@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, FlatList } from 'react-native'
-import SingleRide from './SingleRide'
+import SingleRide from './New/SingleRide'
 import types from '../assets/types'
 
 const NewRide = () => {
@@ -8,6 +8,7 @@ const NewRide = () => {
         <View>
             {types.map(
                 type => <SingleRide
+                    key={type.id}
                     type={type.type}
                     image={type.image}
                     duration={type.duration}

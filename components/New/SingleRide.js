@@ -5,14 +5,14 @@ const SingleRide = ({type,image,duration,price,capacity}) => {
 
     const getImage = (type) => {
         if(type == 'UberX'){
-            return require('../assets/images/UberX.jpeg')
+            return require('../../assets/images/UberX.jpeg')
         }
 
         if(type == 'Comfort'){
-            return require('../assets/images/Comfort.jpeg')
+            return require('../../assets/images/Comfort.jpeg')
         }
 
-        return require('../assets/images/UberXL.jpeg')
+        return require('../../assets/images/UberXL.jpeg')
     }
 
     return (
